@@ -1,0 +1,20 @@
+public class Main {
+    public static void main(String[] args) {
+        String palabra = "Alfonso";
+        //   System.out.println(palabra.length()+ " " + palabra.charAt(0));
+        System.out.println("la palabra "+ palabra + " invertida es "+invertirr(palabra,palabra.length()-1));
+    }
+
+
+    public static String invertirr ( String p, int i)
+    {
+        if ( i== -1)
+        {
+            return "";
+        }
+        else
+        {
+            return p.charAt(i) + " " + invertirr (p,i-1);
+        }
+    }
+}
